@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="menu">
+
+        <div class="d-flex bd-highlight">
+            <div class="logo">
+                <img src="/assets/images/sublimin@2x.png" alt="sublimin">
+            </div>
+            <div class="flex-grow-1 menu-items" [ngClass]="{'hide-menu': hideMenu}">
+                <div class="d-flex inner-menu">
+                    <div class="me-auto m-size">
+                        <a href="#">Buscar ofertas</a>
+                        <a href="#">Mis publicaciones</a>
+                    </div>
+
+                    <div class="m-size">
+                        <!-- <a href="#">Andrey M.</a> -->
+                        <a href="#">Iniciar sesión</a>
+                        <a class="publish" href="#">Publicar oferta</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <button type="button" (click)="hideMenu = !hideMenu" class="btn btn-menu"><img *ngIf="!hideMenu" src="assets/images/close.svg" alt="close"><span *ngIf="hideMenu">Menu</span></button>
+    </div>
+
+</div>

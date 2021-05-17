@@ -1,0 +1,56 @@
+@import '../../../styles';
+.head {
+    background: url('/assets/images/bg_home2x.png') top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+    min-height: 800px;
+    margin-top: -102px;
+    .search-item {
+        max-width: 640px;
+        h1 {
+            font-family: $fontBold;
+            font-weight: 800;
+            font-size: 48px;
+            color: #FFFFFF;
+            letter-spacing: -0.4px;
+            line-height: 51px;
+        }
+    }
+    .search-txt {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.43);
+        letter-spacing: 0.29px;
+    }
+    .search-box {
+        width: 100%;
+        background: white;
+        box-shadow: 0 1px 4px 0 #232D61;
+        border-radius: 9px;
+        margin-top: 25px;
+        margin-bottom: 11px;
+        input {
+            background: transparent;
+            padding: 18px;
+            border: 0px;
+            outline: none;
+        }
+        .btn-search {
+            border: 0px;
+            background: transparent;
+            padding: 15px 35px;
+            &:hover {
+                opacity: 0.5;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+
+h2 {
+    font-family: $fontMedium;
+    font-size: 18px;
+    color: rgba(21, 25, 88, 0.54);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}

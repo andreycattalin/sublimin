@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/fonts/fonts';
+$fontNormal: 'Helvetica-Now-Regular',
+Arial,
+Helvetica,
+sans-serif;
+$fontBold: 'Helvetica-Now-Bold',
+Arial,
+Helvetica,
+sans-serif;
+$fontMedium: 'Helvetica-Now-Medium',
+Arial,
+Helvetica,
+sans-serif;
+* {
+    font-family: 'Helvetica-Now-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1px;
+}
+
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: #F5F6F9;
+}
