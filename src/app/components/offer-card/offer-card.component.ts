@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-offer-card',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private r: Router) { }
 
   ngOnInit() {
+  }
+
+  goDetail(num: string) {
+    this.r.navigate(["/empleo/" + num])
   }
 
 }

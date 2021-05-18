@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './core/home/home.component';
 import { SearchComponent } from './core/search/search.component';
+import { DetailComponent } from './core/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SearchComponent } from './core/search/search.component';
     FooterComponent,
     HomeComponent,
     SearchComponent,
+    DetailComponent,
     OfferCardComponent
   ],
   imports: [

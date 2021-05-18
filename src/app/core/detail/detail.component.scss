@@ -1,0 +1,60 @@
+@import '../../../styles';
+.dbox {
+    background-color: #fff;
+    margin-top: 45px;
+    border-radius: 16px;
+    padding: 27px 16px;
+    h1 {
+        font-size: 22px;
+        font-family: $fontBold;
+        letter-spacing: 0.6px;
+        margin-bottom: 4px;
+    }
+    p {
+        font-size: 16px;
+        color: #1F1348;
+        margin: 0px;
+    }
+    .card-img {
+        width: 160px;
+        object-fit: cover;
+        margin-right: 15px;
+        height: 100px;
+        border-radius: 9px;
+    }
+    .content {
+        font-size: 16px;
+        color: #1F1348;
+    }
+    .btn-in {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: #4052FF;
+        border-radius: 9px;
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 20px;
+        color: white;
+        img {
+            margin-right: 10px;
+        }
+        &:hover {
+            background: #2131bd;
+        }
+    }
+}
+
+.extra {
+    .title {
+        font-family: $fontMedium;
+        font-size: 12px;
+        color: rgba(31, 19, 72, 0.50);
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        margin-top: 14px;
+    }
+    .type {
+        margin-bottom: 4px;
+        margin-top: 5px;
+    }
+}

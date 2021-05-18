@@ -3,14 +3,14 @@
     <div class="menu">
 
         <div class="d-flex bd-highlight">
-            <div class="logo">
+            <div class="logo" (click)="goHome()">
                 <img src="/assets/images/sublimin@2x.png" alt="sublimin">
             </div>
             <div class="flex-grow-1 menu-items" [ngClass]="{'hide-menu': hideMenu}">
                 <div class="d-flex inner-menu">
                     <div class="me-auto m-size">
-                        <a href="#">Buscar ofertas</a>
-                        <a href="#">Mis publicaciones</a>
+                        <a [routerLink]="['/ofertas']" routerLinkActive="active">Buscar ofertas</a>
+                        <a [routerLink]="['/me']" routerLinkActive="active">Mis publicaciones</a>
                     </div>
 
                     <div class="m-size">

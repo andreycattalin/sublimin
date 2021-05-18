@@ -25,41 +25,12 @@
     .content {
         margin-left: 20px;
     }
-    .extra {
-        p {
-            font-size: 14px;
-        }
-        .type {
-            border-radius: 12px;
-            padding: 9px 24px;
-            font-family: $fontMedium;
-            text-align: center;
-            display: inline-block;
-        }
-        .bl {
-            background: rgba(64, 82, 255, 0.11);
-            color: #293BE9;
-        }
-        .gr {
-            background: rgba(17, 196, 111, 0.11);
-            color: #11C46F;
-        }
-        .og {
-            background: rgba(255, 83, 11, 0.11);
-            color: #FF530B;
-        }
-        .yw {
-            background: rgba(249, 145, 10, 0.11);
-            color: #F9910A;
-        }
-        .pp {
-            background: rgba(122, 18, 217, 0.11);
-            color: #521BD5;
-        }
-    }
     &:hover {
         transition: all .3s ease;
         cursor: pointer;
-        box-shadow: 0px 0px 14px 0px #313c6a17;
+        box-shadow: 0px 2px 14px 0px #313c6a17;
+        h1 {
+            color: #4052FF;
+        }
     }
 }

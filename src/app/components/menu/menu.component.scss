@@ -3,9 +3,13 @@
     .logo {
         margin-right: 15px;
         margin-top: -3px;
+        cursor: pointer;
         img {
             height: 20px;
             width: auto;
+        }
+        &:hover {
+            opacity: 0.8;
         }
     }
     a {
@@ -37,6 +41,9 @@
     }
     .btn-menu {
         display: none;
+    }
+    .active {
+        color: white;
     }
 }
 
