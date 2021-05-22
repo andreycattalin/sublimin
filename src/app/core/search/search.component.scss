@@ -6,3 +6,48 @@ h2 {
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
+.head {
+    padding-top: 102px;
+    display: flow-root;
+}
+
+.formbox {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 7px;
+    button {
+        background-color: #4052FF;
+        border-radius: 12px;
+        border: 0px;
+        padding: 13px 28px;
+        height: 100%;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0.44px;
+        margin-left: 10px;
+        transition: all .3s ease;
+        span {
+            margin-left: 14px;
+            margin-right: 4px;
+        }
+        &:hover {
+            background-color: #151958;
+        }
+    }
+    label {
+        font-size: 16px;
+        color: #313C6E;
+        font-family: $fontBold;
+        letter-spacing: 0.39px;
+        opacity: 1;
+    }
+    input,
+    select {
+        border: 0px;
+    }
+    .form-floating {
+        margin-right: 5px;
+    }
+}

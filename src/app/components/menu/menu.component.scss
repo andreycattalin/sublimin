@@ -1,3 +1,4 @@
+@import '../../../styles';
 .menu {
     padding: 34px 0;
     .logo {
@@ -103,5 +104,68 @@
     }
     .hide-menu {
         display: none;
+    }
+}
+
+.modal-content {
+    border-radius: 10px;
+    .login {
+        margin: 0 auto;
+        width: 80%;
+        h5 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-family: $fontMedium;
+        }
+        input {
+            border-radius: 9px;
+        }
+    }
+}
+
+.modal-header {
+    border: 0px;
+    padding: 20px;
+    .btn-close {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #0d0e2b17;
+    }
+}
+
+.btn-login {
+    width: 100%;
+    margin: 12px 0 10px;
+    padding: 15px;
+    background: #4052FF;
+    color: white;
+    border-radius: 9px;
+    &:hover {
+        background-color: #151958;
+    }
+}
+
+.btn-register {
+    width: 100%;
+    margin: 15px 0 24px;
+    padding: 11px;
+    border-radius: 9px;
+    border: 1px solid #151958;
+    &:hover {
+        border-color: #4052FF;
+        color: #4052FF;
+    }
+}
+
+.btn-forgot {
+    float: right;
+    text-align: right;
+    border-radius: 9px;
+    font-size: 12px;
+    padding-right: 0px;
+    &:hover,
+    &:focus {
+        color: #4052FF;
+        box-shadow: none;
     }
 }

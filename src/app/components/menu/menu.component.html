@@ -15,7 +15,7 @@
 
                     <div class="m-size">
                         <!-- <a href="#">Andrey M.</a> -->
-                        <a href="#">Iniciar sesión</a>
+                        <a data-bs-toggle="modal" href="#loginModal" role="button">Iniciar sesión</a>
                         <a class="publish" href="#">Publicar oferta</a>
                     </div>
 
@@ -26,4 +26,34 @@
         <button type="button" (click)="hideMenu = !hideMenu" class="btn btn-menu"><img *ngIf="!hideMenu" src="assets/images/close.svg" alt="close"><span *ngIf="hideMenu">Menu</span></button>
     </div>
 
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="login">
+                    <h5>Inicia sesión</h5>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <button type="button" class="btn btn-forgot">¿Has olvidado la contraseña?</button>
+
+                    <button type="submit" class="btn btn-login">Entrar</button>
+                    <button type="button" class="btn btn-register">Quiero registrarme</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
