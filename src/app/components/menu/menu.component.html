@@ -10,13 +10,13 @@
                 <div class="d-flex inner-menu">
                     <div class="me-auto m-size">
                         <a [routerLink]="['/ofertas']" routerLinkActive="active">Buscar ofertas</a>
-                        <a [routerLink]="['/me']" routerLinkActive="active">Mis publicaciones</a>
+                        <a [routerLink]="['/panel']" routerLinkActive="active">Mis publicaciones</a>
                     </div>
 
                     <div class="m-size">
                         <!-- <a href="#">Andrey M.</a> -->
                         <a data-bs-toggle="modal" href="#loginModal" role="button">Iniciar sesión</a>
-                        <a class="publish" href="#">Publicar oferta</a>
+                        <a class="publish" [routerLink]="['/publicar']">Publicar oferta</a>
                     </div>
 
                 </div>
@@ -34,7 +34,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button #closeModal type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form class="login">
@@ -51,7 +51,7 @@
                     <button type="button" class="btn btn-forgot">¿Has olvidado la contraseña?</button>
 
                     <button type="submit" class="btn btn-login">Entrar</button>
-                    <button type="button" class="btn btn-register">Quiero registrarme</button>
+                    <button type="button" (click)="goRegister()" class="btn btn-register">Quiero registrarme</button>
                 </form>
             </div>
         </div>

@@ -70,3 +70,27 @@ body {
         color: #521BD5;
     }
 }
+
+.btn-login {
+    width: 100%;
+    margin: 12px 0 10px;
+    padding: 15px;
+    background: #4052FF;
+    color: white;
+    border-radius: 9px;
+    &:hover {
+        background-color: #151958;
+    }
+}
+
+.btn-register {
+    width: 100%;
+    margin: 15px 0 24px;
+    padding: 11px;
+    border-radius: 9px;
+    border: 1px solid #151958;
+    &:hover {
+        border-color: #4052FF;
+        color: #4052FF;
+    }
+}

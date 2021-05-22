@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 80px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    a {
+        color: rgba(21, 25, 88, 0.54);
+        text-decoration: none;
+        padding: 10px 20px;
+        &:hover {
+            color: #4052FF;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+
+  @ViewChild('closeModal') closeModal: any;
 
   hideMenu = true
 
@@ -17,6 +19,11 @@ export class MenuComponent implements OnInit {
 
   goHome() {
     this.r.navigate(["/"])
+  }
+
+  goRegister() {
+    this.closeModal.nativeElement.click();
+    this.r.navigate(["/registro"])
   }
 
 }

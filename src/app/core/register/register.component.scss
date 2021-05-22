@@ -1,0 +1,36 @@
+@import '../../../styles';
+.box-register {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.box-title {
+    h1 {
+        font-family: $fontBold;
+        font-size: 50px;
+        color: #151958;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.btn-login {
+    margin-bottom: 30px;
+}
+
+.btn-register {
+    margin-bottom: 0px;
+}
+
+.conditions {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #344d61;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
